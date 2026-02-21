@@ -1,0 +1,20 @@
+# OPENCLAW Config Fixes
+
+## Gateway
+- Set gateway.mode to local 
+
+## Defaults
+- Set model.primary to google-antigravity/gemini-3-flash
+- Set default models for basic agents
+   -primary: google-antigravity/gemini-3-flash
+   -fallbacks: ["openrouter/qwen/qwen3-vl-30b-a3b-instruct",
+               "openrouter/qwen/qwen3-vl-235b-a22b-thinking",
+               "google-antigravity/gemini-3-pro-low",
+               "google-antigravity/gemini-3-pro-high"]
+- Set default models for UI agents
+   -primary: "google-antigravity/gemini-3-pro-high"
+   -fallbacks: ["google-antigravity/gemini-3-pro-low",
+               "google-antigravity/gemini-3-pro",
+               "openrouter/qwen/qwen3-vl-235b-a22b-thinking",
+               "openrouter/qwen/qwen3-vl-30b-a3b-instruct"]
+## 

@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "0bdb4717-8fdd-401d-acb2-a33049bee059",
+      "agentId": "main",
+      "name": "openclaw-watchdog",
+      "enabled": false,
+      "createdAtMs": 1770444596360,
+      "updatedAtMs": 1771041837864,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 300000,
+        "anchorMs": 1770444596360
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "text": "Running gateway watchdog check...",
+        "kind": "systemEvent"
+      },
+      "state": {
+        "lastRunAtMs": 1771041596375,
+        "lastStatus": "ok",
+        "lastDurationMs": 2,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "e65df844-5213-4072-ac0b-c91058250762",
+      "agentId": "main",
+      "name": "agentic-news-blogger-daily",
+      "enabled": true,
+      "createdAtMs": 1770676420940,
+      "updatedAtMs": 1771682403325,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "message": "Research the latest news (last 24-48h) for:\n1. OpenClaw (check GitHub/docs)\n2. Claude Code & Claude Desktop (Anthropic updates)\n3. Antigravity AI news\n4. Trending GitHub repos in AI/Coding.\n\nThen, write a high-energy, rhythmic blog post in Markdown. \nSave the file to: /home/scott/dev/intranet/data/blog/agentic-news-$(date +%F).md.\nAfter saving, run the sync script: /home/scott/dev/intranet/sync.sh.",
+        "kind": "agentTurn",
+        "model": "moonshot/kimi-k2.5"
+      },
+      "delivery": {
+        "mode": "announce"
+      },
+      "state": {
+        "nextRunAtMs": 1771768800000,
+        "lastRunAtMs": 1771682400018,
+        "lastStatus": "error",
+        "lastDurationMs": 3307,
+        "consecutiveErrors": 1,
+        "lastError": "Error: All models failed (18): moonshot/kimi-k2.5: No API key found for provider \"moonshot\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/deepseek/deepseek-v3.2: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemini-3-flash-preview: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-coder-next: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/anthropic/claude-haiku-4.5: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemini-2.5-pro-preview: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemma-3-27b-it:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/meta-llama/llama-3.3-70b-instruct:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/minimax/minimax-m2.5: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-max-thinking: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-next-80b-a3b-instruct:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/x-ai/grok-4-fast: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/x-ai/grok-4.1-fast: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-flash-latest: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-flash-lite-latest: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-2.5-pro: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-2.5-flash: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-3-pro-preview: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)"
+      }
+    },
+    {
+      "id": "afe91766-23d1-4661-aaf1-3ec8d5eb166a",
+      "agentId": "main",
+      "name": "reddit-opportunity-scraper",
+      "enabled": true,
+      "createdAtMs": 1771046620719,
+      "updatedAtMs": 1771628409042,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "🚀 Reddit Opportunity Scraper + Obsidian sync (5:00 PM CST)... scanning for product ideas and pain points, updating daily note."
+      },
+      "state": {
+        "nextRunAtMs": 1771714800000,
+        "lastRunAtMs": 1771628400125,
+        "lastStatus": "ok",
+        "lastDurationMs": 8917,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "a12a239b-3ed1-41a6-a4c8-83480327d93c",
+      "agentId": "main",
+      "name": "Obsidian Hub Sync",
+      "enabled": true,
+      "createdAtMs": 1771448417488,
+      "updatedAtMs": 1771682406479,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,18 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Running Obsidian Hub auto-sync."
+      },
+      "state": {
+        "nextRunAtMs": 1771718400000,
+        "lastRunAtMs": 1771682403325,
+        "lastStatus": "ok",
+        "lastDurationMs": 3154,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "f1cd3cf0-4ca8-4e5d-9b21-7733ed9ea6bb",
+      "agentId": "main",
+      "name": "BRAINS Intranet Sync",
+      "enabled": true,
+      "createdAtMs": 1771448417561,
+      "updatedAtMs": 1771682409196,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 8,18 * * *",
+        "tz": "America/Chicago"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Syncing BRAINS Intranet repository."
+      },
+      "state": {
+        "nextRunAtMs": 1771718400000,
+        "lastRunAtMs": 1771682406479,
+        "lastStatus": "ok",
+        "lastDurationMs": 2717,
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}
