@@ -32,7 +32,7 @@
       "name": "agentic-news-blogger-daily",
       "enabled": true,
       "createdAtMs": 1770676420940,
-      "updatedAtMs": 1771682403325,
+      "updatedAtMs": 1771941625873,
       "schedule": {
         "kind": "cron",
         "expr": "0 8 * * *",
@@ -49,12 +49,12 @@
         "mode": "announce"
       },
       "state": {
-        "nextRunAtMs": 1771768800000,
-        "lastRunAtMs": 1771682400018,
+        "nextRunAtMs": 1772028000000,
+        "lastRunAtMs": 1771941600012,
         "lastStatus": "error",
-        "lastDurationMs": 3307,
-        "consecutiveErrors": 1,
-        "lastError": "Error: All models failed (18): moonshot/kimi-k2.5: No API key found for provider \"moonshot\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/deepseek/deepseek-v3.2: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemini-3-flash-preview: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-coder-next: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/anthropic/claude-haiku-4.5: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemini-2.5-pro-preview: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/google/gemma-3-27b-it:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/meta-llama/llama-3.3-70b-instruct:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/minimax/minimax-m2.5: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-max-thinking: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/qwen/qwen3-next-80b-a3b-instruct:free: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/x-ai/grok-4-fast: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | openrouter/x-ai/grok-4.1-fast: No API key found for provider \"openrouter\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-flash-latest: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-flash-lite-latest: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-2.5-pro: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-2.5-flash: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth) | google/gemini-3-pro-preview: No API key found for provider \"google\". Auth store: /home/scott/.openclaw/agents/main/agent/auth-profiles.json (agentDir: /home/scott/.openclaw/agents/main/agent). Configure auth for this agent (openclaw agents add <id>) or copy auth-profiles.json from the main agentDir. (auth)"
+        "lastDurationMs": 25861,
+        "consecutiveErrors": 4,
+        "lastError": "cron announce delivery failed"
       }
     },
     {
@@ -63,7 +63,7 @@
       "name": "reddit-opportunity-scraper",
       "enabled": true,
       "createdAtMs": 1771046620719,
-      "updatedAtMs": 1771628409042,
+      "updatedAtMs": 1771887607627,
       "schedule": {
         "kind": "cron",
         "expr": "0 17 * * *",
@@ -76,10 +76,10 @@
         "text": "🚀 Reddit Opportunity Scraper + Obsidian sync (5:00 PM CST)... scanning for product ideas and pain points, updating daily note."
       },
       "state": {
-        "nextRunAtMs": 1771714800000,
-        "lastRunAtMs": 1771628400125,
+        "nextRunAtMs": 1771974000000,
+        "lastRunAtMs": 1771887600015,
         "lastStatus": "ok",
-        "lastDurationMs": 8917,
+        "lastDurationMs": 7612,
         "consecutiveErrors": 0
       }
     },
@@ -89,7 +89,7 @@
       "name": "Obsidian Hub Sync",
       "enabled": true,
       "createdAtMs": 1771448417488,
-      "updatedAtMs": 1771682406479,
+      "updatedAtMs": 1771941634957,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,18 * * *",
@@ -102,10 +102,10 @@
         "text": "Running Obsidian Hub auto-sync."
       },
       "state": {
-        "nextRunAtMs": 1771718400000,
-        "lastRunAtMs": 1771682403325,
+        "nextRunAtMs": 1771977600000,
+        "lastRunAtMs": 1771941625873,
         "lastStatus": "ok",
-        "lastDurationMs": 3154,
+        "lastDurationMs": 9084,
         "consecutiveErrors": 0
       }
     },
@@ -115,7 +115,7 @@
       "name": "BRAINS Intranet Sync",
       "enabled": true,
       "createdAtMs": 1771448417561,
-      "updatedAtMs": 1771682409196,
+      "updatedAtMs": 1771941637772,
       "schedule": {
         "kind": "cron",
         "expr": "0 8,18 * * *",
@@ -128,10 +128,10 @@
         "text": "Syncing BRAINS Intranet repository."
       },
       "state": {
-        "nextRunAtMs": 1771718400000,
-        "lastRunAtMs": 1771682406479,
+        "nextRunAtMs": 1771977600000,
+        "lastRunAtMs": 1771941634957,
         "lastStatus": "ok",
-        "lastDurationMs": 2717,
+        "lastDurationMs": 2815,
         "consecutiveErrors": 0
       }
     }

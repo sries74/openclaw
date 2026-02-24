@@ -25,7 +25,7 @@
         ],
         "createdAtMs": 1769808718593,
         "rotatedAtMs": 1771468464798,
-        "lastUsedAtMs": 1771468492109
+        "lastUsedAtMs": 1771949684588
       }
     },
     "createdAtMs": 1769808718592,
@@ -44,7 +44,8 @@
     "scopes": [
       "operator.admin",
       "operator.approvals",
-      "operator.pairing"
+      "operator.pairing",
+      "operator.read"
     ],
     "tokens": {
       "operator": {
@@ -57,7 +58,7 @@
         ],
         "createdAtMs": 1769937853236,
         "rotatedAtMs": 1771020059410,
-        "lastUsedAtMs": 1771645185478
+        "lastUsedAtMs": 1771744122080
       }
     },
     "createdAtMs": 1769937853236,
@@ -95,5 +96,31 @@
     },
     "createdAtMs": 1770260054214,
     "approvedAtMs": 1770260054214
+  },
+  "2a8bc2c787a4dd09ee0213ca7f22f0f3fbce88ae8252954dfc43e8e62945f2cb": {
+    "deviceId": "2a8bc2c787a4dd09ee0213ca7f22f0f3fbce88ae8252954dfc43e8e62945f2cb",
+    "publicKey": "WKKcv0mn4RSsRTCLe8okW844sX0SaXHjkqueigWwTJI",
+    "platform": "ios",
+    "clientId": "openclaw-ios",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "CIDoLEJppxWpwSSoqvgG2Wdr2sQyBEvfJ-6rwXIfqZk",
+        "role": "operator",
+        "scopes": [
+          "operator.admin"
+        ],
+        "createdAtMs": 1771723448622
+      }
+    },
+    "createdAtMs": 1771723448622,
+    "approvedAtMs": 1771723448622
   }
 }
